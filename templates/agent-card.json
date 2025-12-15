@@ -1,0 +1,52 @@
+{
+  "$schema": "https://a2a-protocol.org/schemas/agent-card.json",
+  "name": "[AGENT NAME]",
+  "description": "[Detailed description of agent capabilities and purpose]",
+  "url": "https://[agent-endpoint]/a2a",
+  "version": "1.0.0",
+  "protocolVersion": "0.3.0",
+
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+
+  "skills": [
+    {
+      "id": "[skill-id-kebab-case]",
+      "name": "[Human Readable Skill Name]",
+      "description": "[Detailed description of what this skill does, when to use it, and expected inputs/outputs]",
+      "tags": ["tag1", "tag2", "tag3"],
+      "examples": [
+        "Example prompt 1 that would trigger this skill",
+        "Example prompt 2 showing different use case",
+        "Example prompt 3 demonstrating edge case"
+      ],
+      "inputModes": ["text"],
+      "outputModes": ["text", "file"]
+    },
+    {
+      "id": "[second-skill-id]",
+      "name": "[Second Skill Name]",
+      "description": "[Description]",
+      "tags": ["tag1", "tag2"],
+      "examples": [
+        "Example prompt"
+      ]
+    }
+  ],
+
+  "defaultInputModes": ["text"],
+  "defaultOutputModes": ["text"],
+
+  "authentication": {
+    "schemes": ["oauth2", "apiKey"],
+    "credentials": null
+  },
+
+  "provider": {
+    "organization": "[Organization Name]",
+    "url": "https://[organization-website]"
+  }
+}
