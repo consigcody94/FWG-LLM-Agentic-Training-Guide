@@ -29,7 +29,7 @@
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║                                                                              ║
-║   🏛️  The definitive training resource for federal personnel seeking        ║
+║   🏛️  The definitive training resource for Federal Working Group employees  ║
 ║       mastery in Large Language Model agentic systems — from foundational    ║
 ║       concepts to enterprise-grade multi-agent orchestration.                ║
 ║                                                                              ║
@@ -62,7 +62,7 @@
 <tr>
 <td width="50%">
 
-### 🎓 By Completion, Personnel Will:
+### 🎓 By Completion, You Will:
 - **Understand** LLM architecture and capabilities
 - **Deploy** local and cloud-based AI systems
 - **Implement** MCP and A2A protocols
@@ -1068,7 +1068,7 @@ FWG-LLM-Agentic-Training-Guide/
 
 ## 🤝 Contributing
 
-Contributions to this training guide are welcome from all federal personnel and approved contractors.
+Contributions to this training guide are welcome from all Federal Working Group employees.
 
 ### Contribution Process
 
@@ -1099,7 +1099,7 @@ Contributions to this training guide are welcome from all federal personnel and 
 
 **UNCLASSIFIED // FOR OFFICIAL USE ONLY**
 
-This training material is approved for use by federal personnel and authorized contractors.
+This training material is developed by Federal Working Group for our employees and authorized partners supporting federal clients.
 
 ---
 
@@ -1150,7 +1150,7 @@ This training material is approved for use by federal personnel and authorized c
 
 <br/>
 
-Developed by the Federal Working Group on AI Agentic Systems
+Developed by Federal Working Group — Federal Contracting Solutions
 
 <br/>
 
