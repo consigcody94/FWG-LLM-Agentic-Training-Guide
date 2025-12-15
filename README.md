@@ -728,55 +728,507 @@ Duration: ~70 hours
 
 ## 🚀 Quick Start
 
-### 📋 Prerequisites Checklist
+### 📋 System Requirements
 
-```bash
-# System Requirements
-□ Modern browser (Chrome, Firefox, Edge)
-□ Python 3.11+ installed
-□ Node.js 18+ installed
-□ Git configured
-□ 16GB+ RAM (32GB recommended for local LLMs)
-□ NVIDIA GPU (optional, but recommended)
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  MINIMUM REQUIREMENTS                                                       │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  □ Operating System: Windows 10/11, macOS 12+, or Ubuntu 20.04+            │
+│  □ RAM: 16GB minimum (32GB recommended for local LLMs)                     │
+│  □ Storage: 50GB free space (for models and tools)                         │
+│  □ CPU: 4+ cores (8+ recommended)                                          │
+│  □ GPU: NVIDIA with 8GB+ VRAM (optional but recommended)                   │
+│  □ Internet: Stable connection for API access and downloads                │
+└─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### ⚡ 5-Minute Setup
+---
 
+### 🔧 Step 1: Core Development Tools
+
+<details>
+<summary><b>🐍 Python 3.11+</b></summary>
+
+**macOS:**
 ```bash
-# 1️⃣ Clone the training repository
-git clone https://github.com/your-org/FWG-LLM-Agentic-Training-Guide.git
-cd FWG-LLM-Agentic-Training-Guide
+# Using Homebrew (recommended)
+brew install python@3.11
 
-# 2️⃣ Set up Python environment
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
+# Verify installation
+python3 --version
+```
 
-# 3️⃣ Install Ollama for local LLM exercises
+**Windows:**
+```powershell
+# Using winget
+winget install Python.Python.3.11
+
+# Or download from https://www.python.org/downloads/
+# ✓ Check "Add Python to PATH" during installation
+
+# Verify installation
+python --version
+```
+
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt update
+sudo apt install python3.11 python3.11-venv python3-pip -y
+
+# Verify installation
+python3 --version
+```
+
+</details>
+
+<details>
+<summary><b>📦 Node.js 18+ & npm</b></summary>
+
+**macOS:**
+```bash
+# Using Homebrew
+brew install node@18
+
+# Or using nvm (recommended for version management)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+source ~/.bashrc
+nvm install 18
+nvm use 18
+
+# Verify
+node --version
+npm --version
+```
+
+**Windows:**
+```powershell
+# Using winget
+winget install OpenJS.NodeJS.LTS
+
+# Or download from https://nodejs.org/
+
+# Verify
+node --version
+npm --version
+```
+
+**Linux (Ubuntu/Debian):**
+```bash
+# Using NodeSource
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install nodejs -y
+
+# Verify
+node --version
+npm --version
+```
+
+</details>
+
+<details>
+<summary><b>🔀 Git</b></summary>
+
+**macOS:**
+```bash
+# Usually pre-installed, or:
+brew install git
+
+# Configure
+git config --global user.name "Your Name"
+git config --global user.email "your.email@federalworkinggroup.com"
+```
+
+**Windows:**
+```powershell
+winget install Git.Git
+
+# Configure (run in Git Bash or PowerShell)
+git config --global user.name "Your Name"
+git config --global user.email "your.email@federalworkinggroup.com"
+```
+
+**Linux:**
+```bash
+sudo apt install git -y
+
+# Configure
+git config --global user.name "Your Name"
+git config --global user.email "your.email@federalworkinggroup.com"
+```
+
+</details>
+
+---
+
+### 🤖 Step 2: AI CLI Tools
+
+<details>
+<summary><b>🦙 Ollama (Local LLMs)</b></summary>
+
+**macOS:**
+```bash
+# Download and install
 curl -fsSL https://ollama.ai/install.sh | sh
+
+# Or using Homebrew
+brew install ollama
+
+# Start Ollama service
+ollama serve &
+
+# Pull recommended models
+ollama pull llama3.2        # General purpose (2GB)
+ollama pull mistral         # Fast & capable (4GB)
+ollama pull codellama       # Code generation (4GB)
+ollama pull nomic-embed-text # Embeddings (300MB)
+
+# Verify
+ollama list
+```
+
+**Windows:**
+```powershell
+# Download installer from https://ollama.ai/download/windows
+
+# After installation, pull models in PowerShell:
+ollama pull llama3.2
+ollama pull mistral
+ollama pull codellama
+
+# Verify
+ollama list
+```
+
+**Linux:**
+```bash
+curl -fsSL https://ollama.ai/install.sh | sh
+
+# Start service
+sudo systemctl enable ollama
+sudo systemctl start ollama
+
+# Pull models
 ollama pull llama3.2
 ollama pull mistral
 
-# 4️⃣ Verify installation
+# Verify
+ollama list
+```
+
+</details>
+
+<details>
+<summary><b>🔮 Claude Code CLI (Anthropic)</b></summary>
+
+**All Platforms:**
+```bash
+# Install via npm (requires Node.js)
+npm install -g @anthropic-ai/claude-code
+
+# Authenticate (opens browser)
+claude auth login
+
+# Verify installation
+claude --version
+
+# Optional: Configure default model
+claude config set model claude-sonnet-4-20250514
+```
+
+**Usage:**
+```bash
+# Start interactive session
+claude
+
+# Run with specific prompt
+claude "Explain the MCP protocol"
+
+# Use in a project directory
+cd your-project
+claude
+```
+
+</details>
+
+<details>
+<summary><b>🐙 GitHub CLI (gh)</b></summary>
+
+**macOS:**
+```bash
+brew install gh
+
+# Authenticate
+gh auth login
+```
+
+**Windows:**
+```powershell
+winget install GitHub.cli
+
+# Authenticate
+gh auth login
+```
+
+**Linux:**
+```bash
+# Ubuntu/Debian
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+sudo apt update
+sudo apt install gh -y
+
+# Authenticate
+gh auth login
+```
+
+</details>
+
+<details>
+<summary><b>🤖 GitHub Copilot CLI</b></summary>
+
+```bash
+# Requires GitHub CLI installed first
+gh extension install github/gh-copilot
+
+# Authenticate (requires Copilot subscription)
+gh auth refresh -s copilot
+
+# Usage
+gh copilot suggest "create a Python script that reads CSV"
+gh copilot explain "git rebase -i HEAD~3"
+```
+
+</details>
+
+<details>
+<summary><b>🔗 MCP CLI Tools</b></summary>
+
+```bash
+# Install MCP Inspector (debugging tool)
+npm install -g @anthropic-ai/mcp-inspector
+
+# Install MCP Server SDK
+pip install mcp
+
+# Create a new MCP server project
+mkdir my-mcp-server && cd my-mcp-server
+npm init -y
+npm install @modelcontextprotocol/sdk
+
+# Run MCP Inspector
+mcp-inspector
+```
+
+</details>
+
+---
+
+### 🐍 Step 3: Python AI Libraries
+
+```bash
+# Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# Core AI Libraries
+pip install openai                    # OpenAI API
+pip install anthropic                 # Anthropic Claude API
+pip install google-generativeai       # Google Gemini API
+pip install ollama                    # Ollama Python client
+
+# Agent Frameworks
+pip install langchain                 # LangChain framework
+pip install langgraph                 # LangGraph for agents
+pip install crewai                    # CrewAI multi-agent
+pip install autogen-agentchat         # Microsoft AutoGen
+
+# RAG & Embeddings
+pip install chromadb                  # Vector database
+pip install sentence-transformers    # Embedding models
+pip install faiss-cpu                 # Facebook similarity search
+
+# Utilities
+pip install python-dotenv             # Environment variables
+pip install rich                      # Beautiful terminal output
+pip install typer                     # CLI applications
+pip install httpx                     # Async HTTP client
+pip install pydantic                  # Data validation
+
+# Or install all at once:
+pip install openai anthropic google-generativeai ollama langchain langgraph crewai chromadb sentence-transformers python-dotenv rich typer httpx pydantic
+```
+
+---
+
+### 🔑 Step 4: API Keys Configuration
+
+```bash
+# Create environment file
+touch .env
+
+# Add your API keys (get from provider dashboards)
+cat >> .env << 'EOF'
+# OpenAI - https://platform.openai.com/api-keys
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxx
+
+# Anthropic - https://console.anthropic.com/
+ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxxxxxxxxxxxxx
+
+# Google AI - https://makersuite.google.com/app/apikey
+GOOGLE_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxx
+
+# Azure OpenAI (if applicable)
+AZURE_OPENAI_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxx
+AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com/
+
+# AWS Bedrock (configure via AWS CLI)
+# aws configure
+EOF
+
+# Secure the file
+chmod 600 .env
+```
+
+**Load in Python:**
+```python
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+openai_key = os.getenv("OPENAI_API_KEY")
+anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+```
+
+---
+
+### ✅ Step 5: Verify Installation
+
+```bash
+# Clone this repository
+git clone https://github.com/consigcody94/FWG-LLM-Agentic-Training-Guide.git
+cd FWG-LLM-Agentic-Training-Guide
+
+# Run verification script
 python scripts/verify_setup.py
 ```
+
+**Expected Output:**
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  FWG LLM Training - Environment Verification                               │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  ✅ Python 3.11.x                                                          │
+│  ✅ Node.js 18.x                                                           │
+│  ✅ Git 2.x                                                                │
+│  ✅ Ollama installed (3 models available)                                  │
+│  ✅ Claude Code CLI                                                        │
+│  ✅ OpenAI API key configured                                              │
+│  ✅ Anthropic API key configured                                           │
+│  ✅ All Python packages installed                                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  🎉 Environment ready! You can start the training.                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
 
 ### 🎮 First Exercise: Hello Agent
 
 ```python
-# labs/00-hello-agent/main.py
+# Test your setup with this quick exercise
+# Save as: hello_agent.py
+
 import ollama
 
 response = ollama.chat(
     model='llama3.2',
     messages=[{
         'role': 'user',
-        'content': 'Hello! Introduce yourself as a federal AI training assistant.'
+        'content': 'Hello! Introduce yourself as an AI training assistant for Federal Working Group.'
     }]
 )
 
 print(response['message']['content'])
 ```
+
+```bash
+# Run it
+python hello_agent.py
+```
+
+---
+
+### 🚨 Troubleshooting Common Issues
+
+<details>
+<summary><b>Ollama: "connection refused" error</b></summary>
+
+```bash
+# Make sure Ollama is running
+ollama serve
+
+# Or restart the service (Linux)
+sudo systemctl restart ollama
+
+# Check if port 11434 is in use
+lsof -i :11434
+```
+
+</details>
+
+<details>
+<summary><b>Python: "module not found" errors</b></summary>
+
+```bash
+# Make sure you're in the virtual environment
+source .venv/bin/activate
+
+# Reinstall requirements
+pip install --upgrade -r requirements.txt
+
+# Check pip is using the right Python
+which pip
+which python
+```
+
+</details>
+
+<details>
+<summary><b>API: "authentication failed" errors</b></summary>
+
+```bash
+# Verify your .env file exists and has correct keys
+cat .env
+
+# Test API key directly
+curl https://api.openai.com/v1/models \
+  -H "Authorization: Bearer $OPENAI_API_KEY"
+
+# For Anthropic
+curl https://api.anthropic.com/v1/messages \
+  -H "x-api-key: $ANTHROPIC_API_KEY" \
+  -H "anthropic-version: 2023-06-01"
+```
+
+</details>
+
+<details>
+<summary><b>GPU: CUDA not detected</b></summary>
+
+```bash
+# Check NVIDIA driver
+nvidia-smi
+
+# Install CUDA toolkit (Ubuntu)
+sudo apt install nvidia-cuda-toolkit
+
+# Verify PyTorch sees GPU
+python -c "import torch; print(torch.cuda.is_available())"
+```
+
+</details>
 
 <br/>
 
