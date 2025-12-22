@@ -460,4 +460,523 @@ class FOIAPipeline:
 
 ---
 
+## Case Study 6: Grant Application Review System
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  CASE STUDY: AI-Assisted Grant Review                                       │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  AGENCY: National Science Foundation (Hypothetical)                        │
+│  CHALLENGE: 50,000 proposals/year, 4-month review cycle                   │
+│  SOLUTION: AI pre-screening with RAG on evaluation criteria               │
+│                                                                             │
+│  WORKFLOW:                                                                  │
+│                                                                             │
+│  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐                  │
+│  │  Proposal   │────▶│ AI Analysis │────▶│ Preliminary │                  │
+│  │  Submitted  │     │             │     │   Score     │                  │
+│  └─────────────┘     └──────┬──────┘     └──────┬──────┘                  │
+│                             │                    │                         │
+│                             ▼                    ▼                         │
+│                      ┌─────────────┐     ┌─────────────┐                  │
+│                      │ Compliance  │     │  Criteria   │                  │
+│                      │   Check     │     │  Alignment  │                  │
+│                      └──────┬──────┘     └──────┬──────┘                  │
+│                             │                    │                         │
+│                             └────────┬───────────┘                         │
+│                                      ▼                                     │
+│                             ┌─────────────┐                               │
+│                             │   Expert    │                               │
+│                             │  Reviewer   │                               │
+│                             │  (Human)    │                               │
+│                             └─────────────┘                               │
+│                                                                             │
+│  AI CAPABILITIES:                                                           │
+│  • Check compliance with formatting/eligibility                            │
+│  • Extract key research objectives                                         │
+│  • Compare against funding priorities                                      │
+│  • Identify similar past proposals                                         │
+│  • Generate summary for reviewers                                          │
+│                                                                             │
+│  WHAT AI DOES NOT DO:                                                       │
+│  • Make funding decisions                                                   │
+│  • Score scientific merit                                                   │
+│  • Replace peer review                                                      │
+│  • Evaluate researcher qualifications                                       │
+│                                                                             │
+│  RESULTS:                                                                   │
+│  • Review time: 4 months → 6 weeks                                         │
+│  • Compliance issues caught early: 95%                                     │
+│  • Reviewer preparation time: 60% reduction                                │
+│  • Cost per proposal reviewed: $340 → $120                                 │
+│                                                                             │
+│  LESSONS LEARNED:                                                           │
+│  ✓ AI for administrative tasks, humans for judgment                       │
+│  ✓ Transparent AI reasoning builds trust with applicants                  │
+│  ✓ Must handle diverse scientific domains                                 │
+│  ✓ Appeals process must not be influenced by AI scores                    │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Case Study 7: Multilingual Constituent Services
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│  CASE STUDY: Multilingual AI Assistant                                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  AGENCY: Immigration Services (Hypothetical)                               │
+│  CHALLENGE: 150+ languages, 10M+ annual inquiries                         │
+│  SOLUTION: Multilingual RAG with real-time translation                    │
+│                                                                             │
+│  ARCHITECTURE:                                                              │
+│                                                                             │
+│     User                                                                    │
+│   (Any Language)                                                           │
+│       │                                                                     │
+│       ▼                                                                     │
+│  ┌─────────────┐                                                           │
+│  │  Language   │                                                           │
+│  │  Detection  │                                                           │
+│  └──────┬──────┘                                                           │
+│         │                                                                   │
+│         ▼                                                                   │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐                    │
+│  │  Translate  │───▶│     RAG     │───▶│  Translate  │                    │
+│  │  to English │    │   Search    │    │  to User's  │                    │
+│  └─────────────┘    └─────────────┘    │  Language   │                    │
+│                                         └─────────────┘                    │
+│                                               │                            │
+│                                               ▼                            │
+│                                         Response                           │
+│                                      (User's Language)                     │
+│                                                                             │
+│  SUPPORTED LANGUAGES:                                                       │
+│  • Tier 1 (Native): English, Spanish, Chinese, Vietnamese                 │
+│  • Tier 2 (High Quality): 20 additional languages                         │
+│  • Tier 3 (Machine Translation): 130+ additional languages                │
+│                                                                             │
+│  RESULTS:                                                                   │
+│  • Languages served: 45 → 150+                                            │
+│  • Response time: Same-day for all languages                               │
+│  • Translation costs: $50M/year → $5M/year                                │
+│  • Accessibility score: 3.2 → 4.6/5                                       │
+│                                                                             │
+│  CRITICAL SAFEGUARDS:                                                       │
+│  • Human translators verify high-stakes communications                     │
+│  • Clear "AI translation" disclosure                                      │
+│  • Quality monitoring per language                                        │
+│  • Cultural context review for sensitive topics                           │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Detailed ROI Analysis Template
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    DETAILED ROI CALCULATION WORKSHEET                       │
+├─────────────────────────────────────────────────────────────────────────────┤
+
+PROJECT: [Your Project Name]
+DATE: [Assessment Date]
+ASSESSMENT PERIOD: [e.g., 3 years]
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 1: COST ANALYSIS
+═══════════════════════════════════════════════════════════════════════════════
+
+1.1 DEVELOPMENT COSTS (One-Time)
+┌─────────────────────────────────┬──────────────┬────────────────────────────┐
+│ Item                            │ Cost         │ Notes                      │
+├─────────────────────────────────┼──────────────┼────────────────────────────┤
+│ Internal labor (development)    │ $________    │ FTE x months x rate        │
+│ Internal labor (PM/oversight)   │ $________    │                            │
+│ Contractor development          │ $________    │                            │
+│ Cloud infrastructure setup      │ $________    │                            │
+│ Security assessment             │ $________    │                            │
+│ Integration with existing sys   │ $________    │                            │
+│ Testing & QA                    │ $________    │                            │
+│ Documentation                   │ $________    │                            │
+├─────────────────────────────────┼──────────────┼────────────────────────────┤
+│ SUBTOTAL DEVELOPMENT            │ $________    │                            │
+└─────────────────────────────────┴──────────────┴────────────────────────────┘
+
+1.2 TRAINING & CHANGE MANAGEMENT (One-Time)
+┌─────────────────────────────────┬──────────────┬────────────────────────────┐
+│ Training development            │ $________    │                            │
+│ Training delivery               │ $________    │ Users x hours x rate       │
+│ Lost productivity during rollout│ $________    │                            │
+│ Change management consulting    │ $________    │                            │
+├─────────────────────────────────┼──────────────┼────────────────────────────┤
+│ SUBTOTAL TRAINING               │ $________    │                            │
+└─────────────────────────────────┴──────────────┴────────────────────────────┘
+
+1.3 ONGOING COSTS (Annual)
+┌─────────────────────────────────┬──────────────┬────────────────────────────┐
+│ LLM API costs                   │ $________/yr │ Tokens/month x 12          │
+│ Cloud compute/hosting           │ $________/yr │                            │
+│ Vector database storage         │ $________/yr │                            │
+│ Maintenance & support           │ $________/yr │ Typically 15-20% of dev    │
+│ Monitoring & security           │ $________/yr │                            │
+│ Model updates/retraining        │ $________/yr │                            │
+├─────────────────────────────────┼──────────────┼────────────────────────────┤
+│ SUBTOTAL ANNUAL                 │ $________/yr │                            │
+└─────────────────────────────────┴──────────────┴────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 2: BENEFIT ANALYSIS
+═══════════════════════════════════════════════════════════════════════════════
+
+2.1 LABOR SAVINGS
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Current State:                                                              │
+│   Tasks per year: ________ x Hours per task: ________ = ________ hours     │
+│   Hours x Loaded rate ($______/hr) = $________ annual cost                 │
+│                                                                             │
+│ Future State with AI:                                                       │
+│   Hours reduced by: ________% = ________ hours saved                       │
+│   Hours saved x $______/hr = $________ annual savings                      │
+│                                                                             │
+│ NET ANNUAL LABOR SAVINGS: $________                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+2.2 EFFICIENCY IMPROVEMENTS
+┌─────────────────────────────────┬──────────────┬────────────────────────────┐
+│ Faster processing ($/hr saved) │ $________/yr │                            │
+│ Reduced errors (cost of rework)│ $________/yr │                            │
+│ Improved consistency           │ $________/yr │                            │
+│ 24/7 availability value        │ $________/yr │                            │
+│ Scalability without new hires  │ $________/yr │                            │
+├─────────────────────────────────┼──────────────┼────────────────────────────┤
+│ SUBTOTAL EFFICIENCY            │ $________/yr │                            │
+└─────────────────────────────────┴──────────────┴────────────────────────────┘
+
+2.3 QUALITY IMPROVEMENTS
+┌─────────────────────────────────┬──────────────┬────────────────────────────┐
+│ Error reduction value          │ $________/yr │ Errors x cost per error    │
+│ Compliance improvement         │ $________/yr │ Avoided penalties          │
+│ Customer satisfaction impact   │ $________/yr │ Retention, reputation      │
+├─────────────────────────────────┼──────────────┼────────────────────────────┤
+│ SUBTOTAL QUALITY               │ $________/yr │                            │
+└─────────────────────────────────┴──────────────┴────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+SECTION 3: ROI CALCULATION
+═══════════════════════════════════════════════════════════════════════════════
+
+Year 0 (Development):
+  Costs: Development + Training = -$________
+
+Year 1:
+  Ongoing Costs: $________
+  Benefits: $________
+  Net: $________
+
+Year 2:
+  Ongoing Costs: $________
+  Benefits: $________ (may increase with optimization)
+  Net: $________
+
+Year 3:
+  Ongoing Costs: $________
+  Benefits: $________
+  Net: $________
+
+═══════════════════════════════════════════════════════════════════════════════
+
+SUMMARY METRICS:
+┌─────────────────────────────────┬──────────────────────────────────────────┐
+│ Total 3-Year Investment         │ $________                                │
+│ Total 3-Year Benefits           │ $________                                │
+│ Net Present Value (10% discount)│ $________                                │
+│ Return on Investment (ROI)      │ ________%                                │
+│ Payback Period                  │ ________ months                          │
+└─────────────────────────────────┴──────────────────────────────────────────┘
+
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Implementation Roadmap Template
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                   FEDERAL AI IMPLEMENTATION ROADMAP                         │
+├─────────────────────────────────────────────────────────────────────────────┤
+
+PHASE 1: DISCOVERY & PLANNING (Weeks 1-4)
+─────────────────────────────────────────
+Week 1:
+  □ Define problem statement
+  □ Identify stakeholders
+  □ Document current process
+  □ Gather baseline metrics
+
+Week 2:
+  □ Assess data availability
+  □ Review security requirements
+  □ Identify compliance needs
+  □ Draft initial architecture
+
+Week 3:
+  □ Evaluate vendor options
+  □ Estimate costs
+  □ Draft business case
+  □ Identify risks
+
+Week 4:
+  □ Stakeholder review
+  □ Secure initial funding
+  □ Finalize project charter
+  □ Establish governance
+
+DELIVERABLES:
+  ✓ Project charter
+  ✓ Business case with ROI
+  ✓ Initial architecture diagram
+  ✓ Risk assessment
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PHASE 2: PROOF OF CONCEPT (Weeks 5-10)
+─────────────────────────────────────────
+Week 5-6:
+  □ Set up development environment
+  □ Implement basic functionality
+  □ Connect to LLM provider
+  □ Create minimal RAG (if needed)
+
+Week 7-8:
+  □ Build core use case
+  □ Implement input validation
+  □ Add basic guardrails
+  □ Internal testing
+
+Week 9-10:
+  □ User acceptance testing
+  □ Collect feedback
+  □ Document learnings
+  □ Go/No-Go decision
+
+DELIVERABLES:
+  ✓ Working prototype
+  ✓ Test results
+  ✓ User feedback report
+  ✓ Refined requirements
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PHASE 3: PILOT DEPLOYMENT (Weeks 11-18)
+─────────────────────────────────────────
+Week 11-12:
+  □ Expand functionality
+  □ Implement security controls
+  □ Set up monitoring
+  □ Create runbooks
+
+Week 13-14:
+  □ Security assessment
+  □ Address findings
+  □ Performance testing
+  □ Documentation
+
+Week 15-16:
+  □ Deploy to pilot group
+  □ Train pilot users
+  □ Monitor closely
+  □ Daily feedback review
+
+Week 17-18:
+  □ Analyze pilot results
+  □ Refine based on feedback
+  □ Prepare for expansion
+  □ Update documentation
+
+DELIVERABLES:
+  ✓ Production-ready system
+  ✓ Security approval
+  ✓ Pilot metrics report
+  ✓ Training materials
+
+═══════════════════════════════════════════════════════════════════════════════
+
+PHASE 4: FULL DEPLOYMENT (Weeks 19-26)
+─────────────────────────────────────────
+Week 19-20:
+  □ Scale infrastructure
+  □ Expand to additional users
+  □ Full training rollout
+  □ Monitor performance
+
+Week 21-22:
+  □ Continue expansion
+  □ Address issues
+  □ Optimize based on usage
+  □ Cost monitoring
+
+Week 23-24:
+  □ Complete deployment
+  □ Final training sessions
+  □ Knowledge transfer
+  □ Documentation finalization
+
+Week 25-26:
+  □ Post-deployment review
+  □ Lessons learned
+  □ Success metrics report
+  □ Plan continuous improvement
+
+DELIVERABLES:
+  ✓ Full deployment complete
+  ✓ All users trained
+  ✓ Success metrics achieved
+  ✓ Continuous improvement plan
+
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Risk Assessment Matrix
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                       AI PROJECT RISK MATRIX                                │
+├─────────────────────────────────────────────────────────────────────────────┤
+
+TECHNICAL RISKS
+┌────────────────────┬────────────┬────────────┬─────────────────────────────┐
+│ Risk               │ Likelihood │ Impact     │ Mitigation                  │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Model accuracy     │ Medium     │ High       │ Extensive testing, HITL    │
+│ insufficient       │            │            │                             │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ API rate limits    │ Medium     │ Medium     │ Caching, batch processing  │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Integration issues │ High       │ Medium     │ Thorough integration testing│
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Performance at     │ Medium     │ High       │ Load testing, autoscaling  │
+│ scale              │            │            │                             │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Model deprecation  │ Low        │ Medium     │ Abstract model layer,      │
+│                    │            │            │ version pinning            │
+└────────────────────┴────────────┴────────────┴─────────────────────────────┘
+
+SECURITY RISKS
+┌────────────────────┬────────────┬────────────┬─────────────────────────────┐
+│ Prompt injection   │ High       │ High       │ Input validation, output   │
+│                    │            │            │ filtering, monitoring      │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Data exposure      │ Medium     │ Critical   │ Data classification,       │
+│                    │            │            │ encryption, access control │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Compliance failure │ Medium     │ Critical   │ Early security review,     │
+│                    │            │            │ compliance checklist       │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Audit gaps         │ Medium     │ High       │ Comprehensive logging,     │
+│                    │            │            │ retention policy           │
+└────────────────────┴────────────┴────────────┴─────────────────────────────┘
+
+ORGANIZATIONAL RISKS
+┌────────────────────┬────────────┬────────────┬─────────────────────────────┐
+│ User adoption      │ High       │ High       │ Change management, training│
+│ resistance         │            │            │ champions, early wins      │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Stakeholder misalig│ Medium     │ High       │ Regular communication,     │
+│ nment              │            │            │ expectation setting        │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Skills gap         │ High       │ Medium     │ Training program, hire     │
+│                    │            │            │ expertise, partners        │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Funding uncertainty│ Medium     │ High       │ Quick wins, ROI reporting, │
+│                    │            │            │ phased approach            │
+└────────────────────┴────────────┴────────────┴─────────────────────────────┘
+
+OPERATIONAL RISKS
+┌────────────────────┬────────────┬────────────┬─────────────────────────────┐
+│ Vendor dependency  │ Medium     │ Medium     │ Multi-provider strategy,   │
+│                    │            │            │ local fallbacks            │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Cost overruns      │ High       │ Medium     │ Usage monitoring, alerts,  │
+│                    │            │            │ budget caps                │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Model drift        │ Medium     │ Medium     │ Monitoring, periodic       │
+│                    │            │            │ evaluation, retraining     │
+├────────────────────┼────────────┼────────────┼─────────────────────────────┤
+│ Incident response  │ Medium     │ High       │ Runbooks, on-call, testing │
+│ failure            │            │            │                             │
+└────────────────────┴────────────┴────────────┴─────────────────────────────┘
+
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Knowledge Check
+
+```
+1. What is the most common reason federal AI projects fail?
+   a) Technical complexity
+   b) Budget constraints
+   c) Change management and user adoption
+   d) Vendor issues
+
+2. In successful deployments, what percentage of effort typically goes to
+   data preparation?
+   a) 10%
+   b) 25%
+   c) 40%
+   d) 60%
+
+3. Which metric is most important for a citizen-facing AI chatbot?
+   a) Cost per query
+   b) Response speed
+   c) User satisfaction and trust
+   d) AI accuracy rate
+
+4. What should happen when an AI system's confidence is low?
+   a) Return the best guess anyway
+   b) Escalate to human review
+   c) Ask the user to rephrase
+   d) Return an error message
+
+5. How should AI be positioned relative to human decision-making in
+   high-stakes federal applications?
+   a) AI should make final decisions to reduce bias
+   b) AI should recommend, humans should decide
+   c) Humans and AI should vote equally
+   d) AI should only be used for low-stakes decisions
+```
+
+**Answers: 1-c, 2-c, 3-c, 4-b, 5-b**
+
+---
+
+## Additional Resources
+
+### Federal AI Guidance
+- [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+- [Executive Order 14110: Safe AI](https://www.whitehouse.gov/briefing-room/presidential-actions/)
+- [OMB M-24-10: AI Governance](https://www.whitehouse.gov/omb/management/ofcio/)
+
+### Implementation Guides
+- FedRAMP Authorization Guide
+- FISMA AI Control Implementation
+- Section 508 AI Accessibility
+
+### Community Resources
+- Federal AI Community of Practice
+- GSA AI Marketplace
+- CIO Council AI Working Group
+
+---
+
 *Federal Working Group LLM Training Program - Module 27 (Final)*
