@@ -1,0 +1,100 @@
+# License Agreement
+
+## FWG LLM Agentic Training Guide
+
+**UNCLASSIFIED // FOR OFFICIAL USE ONLY**
+
+Copyright (c) 2025 Federal Working Group
+
+---
+
+## Terms of Use
+
+### 1. Grant of License
+
+Federal Working Group ("FWG") grants authorized users a non-exclusive, non-transferable license to use, copy, and distribute this training material subject to the following conditions:
+
+### 2. Authorized Users
+
+This material is authorized for use by:
+- Federal Working Group employees
+- Authorized contractors and partners supporting federal clients
+- Federal agency personnel with written authorization
+
+### 3. Permitted Uses
+
+Authorized users may:
+- Use the material for training and educational purposes
+- Make copies for internal training programs
+- Adapt and modify material for specific federal client needs
+- Create derivative works for authorized federal programs
+
+### 4. Restrictions
+
+Users may NOT:
+- Redistribute to unauthorized parties
+- Use for commercial purposes outside federal contracting
+- Remove copyright notices or classification markings
+- Share with foreign nationals without proper authorization
+- Use in violation of applicable federal regulations
+
+### 5. Intellectual Property
+
+All intellectual property rights in this material remain with Federal Working Group. Use of this material does not transfer ownership of any intellectual property.
+
+### 6. Third-Party Content
+
+This material includes references to and examples using third-party APIs, tools, and frameworks. Users must comply with the respective licenses and terms of service for:
+- OpenAI API and products
+- Anthropic API and products
+- Google AI products
+- Microsoft products
+- Open source software referenced herein
+
+### 7. No Warranty
+
+THIS MATERIAL IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+### 8. Limitation of Liability
+
+IN NO EVENT SHALL FEDERAL WORKING GROUP BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM THE USE OF THIS MATERIAL.
+
+### 9. Federal Compliance
+
+Use of this material must comply with all applicable federal laws, regulations, and policies including but not limited to:
+- Federal Acquisition Regulation (FAR)
+- Defense Federal Acquisition Regulation Supplement (DFARS)
+- FISMA and FedRAMP requirements
+- NIST guidelines and frameworks
+- Executive Orders pertaining to AI
+
+### 10. Updates and Changes
+
+Federal Working Group reserves the right to modify, update, or discontinue this material at any time. Users are responsible for obtaining current versions.
+
+### 11. Governing Law
+
+This license shall be governed by and construed in accordance with the laws of the United States.
+
+---
+
+## Contact
+
+For licensing inquiries or authorization requests:
+
+**Federal Working Group**
+Training and Curriculum Division
+
+---
+
+**Document Control**
+| Field | Value |
+|-------|-------|
+| Classification | UNCLASSIFIED |
+| Version | 1.0.0 |
+| Effective Date | 2025 |
+| Review Cycle | Annual |
+
+---
+
+*This license is subject to federal procurement regulations and may be superseded by specific contract terms.*
