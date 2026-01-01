@@ -1,0 +1,47 @@
+# FWG LLM Training - Interactive Learning Requirements
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+rich==13.7.0                  # Beautiful terminal output
+typer==0.9.0                  # CLI application framework
+click==8.1.7                  # Command line interface
+prompt_toolkit==3.0.43        # Interactive prompts
+
+# Data and JSON
+pydantic==2.5.3              # Data validation
+python-dotenv==1.0.0         # Environment variables
+
+# Progress tracking
+tqdm==4.66.1                 # Progress bars
+tabulate==0.9.0              # Table formatting
+
+# Testing and validation
+pytest==7.4.3                # Testing framework
+pytest-asyncio==0.21.1       # Async testing
+
+# Code execution (for code challenges)
+# Note: For production, use secure sandboxing like Docker
+ipython==8.12.0              # Interactive Python
+jupyter==1.0.0               # Jupyter notebooks for labs
+RestrictedPython==6.2        # Secure Python code execution
+websockets==12.0             # WebSocket support for real-time features
+
+# Web dashboard (optional)
+fastapi==0.104.1             # Web framework
+uvicorn==0.24.0              # ASGI server
+jinja2==3.1.2                # Templating
+
+# Visualization
+plotly==5.18.0               # Interactive charts
+matplotlib==3.8.2            # Static plots
+seaborn==0.13.0              # Statistical visualization
+
+# AI API clients (for exercises)
+openai==1.6.1                # OpenAI API
+anthropic==0.7.8             # Claude API
+ollama==0.1.6                # Ollama client
+
+# Utilities
+httpx==0.26.0                # Async HTTP client
+aiofiles==23.2.1             # Async file operations
+watchdog==3.0.0              # File system monitoring
