@@ -860,17 +860,17 @@ For complete guides, technical details, and advanced usage:
 <tr>
 <td width="33%">
 
-#### 🚀 [28. Antigravity](modules/28-antigravity/README.md)
+#### 🚀 [28. Google Antigravity IDE](modules/28-antigravity/README.md)
 ```
-├── Context Window Mitigation
-├── Hierarchical Memory Systems
-├── Semantic Compression
-├── Multi-Agent Orchestration
-├── Production Reliability
-└── Circuit Breakers
+├── Agent-First Development
+├── Editor & Manager Views
+├── Artifacts System
+├── Security & Autonomy Policies
+├── Rules, Workflows & Skills
+└── Multi-Agent Orchestration
 ```
-**Duration:** 6 hours
-**Prerequisites:** Modules 12, 14
+**Duration:** 4 hours
+**Prerequisites:** Module 12
 
 </td>
 <td width="33%">
@@ -1525,7 +1525,7 @@ python -c "import torch; print(torch.cuda.is_available())"
 | 18 | Security Audit | 19 | ⭐⭐⭐⭐⭐ | 240 min |
 | 19 | Cost Analysis | 20 | ⭐⭐⭐ | 60 min |
 | 20 | Hybrid Architecture | 21 | ⭐⭐⭐⭐ | 150 min |
-| 21 | Antigravity Systems | 28 | ⭐⭐⭐⭐ | 120 min |
+| 21 | Google Antigravity IDE | 28 | ⭐⭐⭐ | 195 min |
 
 </div>
 
