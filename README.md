@@ -33,7 +33,7 @@
 ║       mastery in Large Language Model agentic systems — from foundational    ║
 ║       concepts to enterprise-grade multi-agent orchestration.                ║
 ║                                                                              ║
-║   📚 27 Comprehensive Modules        🎮 Interactive Learning Platform        ║
+║   📚 28 Comprehensive Modules        🎮 Interactive Learning Platform        ║
 ║   🎯 Role-Based Learning Paths       🤖 AI-Powered Adaptive Tutor            ║
 ║   💻 Live Code Sandbox               🏆 Competitive CTF Challenges           ║
 ║   🛡️ Security & Governance Focus     🚀 Production-Ready Patterns            ║
@@ -381,7 +381,7 @@ For complete guides, technical details, and advanced usage:
                             ║                                                           ║
     ┌───────────────────────╫───────────────────────────────────────────────────────────╫───────────────────────┐
     │                       ║                      ADVANCED TIER                        ║                       │
-    │                       ║                    (Modules 19-27)                        ║                       │
+    │                       ║                    (Modules 19-28)                        ║                       │
     │   ┌─────────────┐     ║     ┌─────────────┐     ┌─────────────┐     ┌───────────┐║                       │
     │   │ 19. Security│     ║     │ 20. Cost    │     │ 21. Hybrid  │     │ 22.Stream │║                       │
     │   │ & Governance│────▶║────▶│ Optimization│────▶│ Architecture│────▶│ Real-time │║                       │
@@ -397,6 +397,12 @@ For complete guides, technical details, and advanced usage:
     │                       ║                       ┌─────────────┐                    ║                       │
     │                       ║                       │ 27. Case    │                    ║                       │
     │                       ║                       │ Studies     │                    ║                       │
+    │                       ║                       └─────────────┘                    ║                       │
+    │                       ║                               │                          ║                       │
+    │                       ║                               ▼                          ║                       │
+    │                       ║                       ┌─────────────┐                    ║                       │
+    │                       ║                       │ 28.Anti-    │                    ║                       │
+    │                       ║                       │ gravity     │                    ║                       │
     │                       ║                       └─────────────┘                    ║                       │
     └───────────────────────╫───────────────────────────────────────────────────────────╫───────────────────────┘
                             ║                                                           ║
@@ -707,7 +713,7 @@ For complete guides, technical details, and advanced usage:
 
 <br/>
 
-### 🎓 Tier 3: Advanced (Modules 19-27)
+### 🎓 Tier 3: Advanced (Modules 19-28)
 
 <table>
 <tr>
@@ -848,6 +854,29 @@ For complete guides, technical details, and advanced usage:
 ```
 **Duration:** 4 hours
 **Prerequisites:** All previous
+
+</td>
+</tr>
+<tr>
+<td width="33%">
+
+#### 🚀 [28. Antigravity](modules/28-antigravity/README.md)
+```
+├── Context Window Mitigation
+├── Hierarchical Memory Systems
+├── Semantic Compression
+├── Multi-Agent Orchestration
+├── Production Reliability
+└── Circuit Breakers
+```
+**Duration:** 6 hours
+**Prerequisites:** Modules 12, 14
+
+</td>
+<td width="33%">
+
+</td>
+<td width="33%">
 
 </td>
 </tr>
@@ -1496,6 +1525,7 @@ python -c "import torch; print(torch.cuda.is_available())"
 | 18 | Security Audit | 19 | ⭐⭐⭐⭐⭐ | 240 min |
 | 19 | Cost Analysis | 20 | ⭐⭐⭐ | 60 min |
 | 20 | Hybrid Architecture | 21 | ⭐⭐⭐⭐ | 150 min |
+| 21 | Antigravity Systems | 28 | ⭐⭐⭐⭐ | 120 min |
 
 </div>
 
@@ -1699,7 +1729,7 @@ FWG-LLM-Agentic-Training-Guide/
 ├── CODE_OF_CONDUCT.md           # Code of conduct
 ├── LICENSE                      # License information
 │
-├── modules/                     # 27 training modules
+├── modules/                     # 28 training modules
 │   ├── 01-foundations/
 │   │   ├── README.md            # Module overview
 │   │   ├── lessons/             # Individual lessons
@@ -1707,7 +1737,7 @@ FWG-LLM-Agentic-Training-Guide/
 │   │   └── assessments/         # Knowledge checks
 │   ├── 02-web-gui-ai/
 │   │   └── ...
-│   └── ... (modules 03-27)
+│   └── ... (modules 03-28)
 │
 ├── labs/                        # Hands-on lab exercises
 │   ├── 00-hello-agent/
